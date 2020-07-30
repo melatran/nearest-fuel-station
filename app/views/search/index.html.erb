@@ -1,0 +1,15 @@
+<h1>The Nearest Gas Station to You</h1>
+
+<div class="fuel-station">
+  <p class="name"><%= @station.name %></p>
+  <p class="address"><%= @station.address %></p>
+  <p class="fuel-type"><%= @station.fuel_type %></p>
+  <p class="access-time"><%= @station.access_time %></p>
+  <p class="distance"><%= @directions.distance %></p>
+  <p class="travel-time"><%= @directions.travel_time %></p>
+  <div class="directions">
+    <li><% @directions.directions.each do |direction|%>
+      <%= direction %>
+      <% end %>
+    </li></div>
+</div>
